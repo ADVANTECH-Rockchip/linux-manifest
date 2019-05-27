@@ -7,16 +7,16 @@
     <linkfile dest="Makefile" src="build/Makefile"/>
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
-  <project name="linux_device" path="device" remote="advantech-github" revision="5f1c624b8efe9cb8b6ae326b9243e3ba37d29268" upstream="rk3288_linux_v2.0">
+  <project name="linux_device" path="device" remote="advantech-github" revision="8b8a4c8075e3fc7e406f9345acf140e47c816bf2" upstream="rk3288_linux_v2.0">
     <linkfile dest="build.sh" src="rockchip/common/build.sh"/>
     <linkfile dest="mkfirmware.sh" src="rockchip/common/mkfirmware.sh"/>
     <linkfile dest="rkflash.sh" src="rockchip/common/rkflash.sh"/>
   </project>
-  <project name="linux_external" path="external" remote="advantech-github" revision="7244a12e29a19502e7433bfec4807556feb8584c" upstream="rk3288_linux_v2.0"/>
-  <project name="linux_kernel-rk" path="kernel" remote="advantech-github" revision="b403d20267eee5207e907b31f48046228e221f92" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_external" path="external" remote="advantech-github" revision="bd7a4016221c5646056e6018a7811291ce638513" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_kernel-rk" path="kernel" remote="advantech-github" revision="eef7648c253c2cbc600c044e1679a577cc627cfe" upstream="rk3288_linux_v2.0"/>
   <project name="linux_prebuilts" path="prebuilts" remote="advantech-github" revision="f0cc04c2bcdbb94cd74bbe7b284c1fb1586df1af" upstream="rk3288_linux_v2.0"/>
   <project name="linux_rkbin" path="rkbin" remote="advantech-github" revision="67b0424fda232cf6ef3537b2e8a0fd4c42bf4695" upstream="rk3288_linux_v2.0"/>
-  <project name="linux_rootfs" path="rootfs" remote="advantech-github" revision="1db3753ac633b58238813ef95e021dc465bec164" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_rootfs" path="rootfs" remote="advantech-github" revision="483afa6dc86baf361a3bb98a3b0055103f45bae4" upstream="rk3288_linux_v2.0"/>
   <project name="linux_tools" path="tools" remote="advantech-github" revision="1ff9e5276ee02a48137bda286debf12848835852" upstream="rk3288_linux_v2.0"/>
-  <project name="linux_u-boot-rk" path="u-boot" remote="advantech-github" revision="f9e611a3435df9085ba93c8a1c186ed4f380a1d5" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_u-boot-rk" path="u-boot" remote="advantech-github" revision="c4bda54e1fec91f441a58eaae019d56a1c756191" upstream="rk3288_linux_v2.0"/>
 </manifest>
