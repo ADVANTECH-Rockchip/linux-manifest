@@ -13,7 +13,7 @@
 
   <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v210"/>
   <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v210"/>
-
+  <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs/adv" revision="rk3399_linux_v210"/>
 <!-- Rockchip linux code -->
   <project name="QLauncher" path="app/QLauncher" revision="0dd9497ec64309b4512f07e01c92723c60927d88" upstream="master"/>
   <project name="alsa-config" path="external/alsa-config" revision="7dce63af6a4e24c0154f70de6d96dfc17aa38ddc" upstream="master"/>
