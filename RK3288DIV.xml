@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/ADVANTECH-Rockchip/" name="advantech-github"/>
+  
+  <project name="linux_app" path="app" remote="advantech-github" revision="5d49de3dec32b002dd2519e69f76c586f5b7609d" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_buildroot" path="buildroot" remote="advantech-github" revision="1849ff2f4ac44d51b24f1ff54342b6072a6dd6f0" upstream="rk3288_linux_v2.0">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="linux_device" path="device" remote="advantech-github" revision="8b8a4c8075e3fc7e406f9345acf140e47c816bf2" upstream="rk3288_linux_v2.0">
+    <linkfile dest="build.sh" src="rockchip/common/build.sh"/>
+    <linkfile dest="mkfirmware.sh" src="rockchip/common/mkfirmware.sh"/>
+    <linkfile dest="rkflash.sh" src="rockchip/common/rkflash.sh"/>
+  </project>
+  <project name="linux_external" path="external" remote="advantech-github" revision="b1bd64d6ea84f33cdab31237d7f58ae9854bb48b" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_kernel-rk" path="kernel" remote="advantech-github" revision="835c748593f36c96d54341ca8e490b8aa2be4b4d" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_prebuilts" path="prebuilts" remote="advantech-github" revision="f0cc04c2bcdbb94cd74bbe7b284c1fb1586df1af" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_rkbin" path="rkbin" remote="advantech-github" revision="67b0424fda232cf6ef3537b2e8a0fd4c42bf4695" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_rootfs" path="rootfs" remote="advantech-github" revision="b2e7d35c7c6d1405131d1e584076fe99729a6ffc" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_tools" path="tools" remote="advantech-github" revision="1945972b562247c6d0bf9399e38aab330582c946" upstream="rk3288_linux_v2.0"/>
+  <project name="linux_u-boot-rk" path="u-boot" remote="advantech-github" revision="fd7998a6779f65b5188f06f27d803c3c803f9d9f" upstream="rk3288_linux_v2.0"/>
+</manifest>
