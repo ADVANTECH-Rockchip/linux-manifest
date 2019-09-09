@@ -12,7 +12,7 @@
 
   <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v220_dmssa53"/>
   <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v220"/>
-  <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs/adv" revision="rk3399_linux_v210"/>
+  <project remote="advantech-github" name="linux_rootfs-build" path="rootfs" revision="rk3399_linux_v220_dmssa53"/>
 
   <!-- Rockchip linux code -->
   <project name="QLauncher" path="app/QLauncher" revision="dbd9b7562253c277e5010e1df0ed2dcc4fca4a21" upstream="master"/>
@@ -64,7 +64,6 @@
   </project>
   <project name="powermanager" path="external/powermanager" revision="17921d6b75395df5478613973e58916a6cf7c7ad" upstream="master"/>
   <project name="recovery" path="external/recovery" revision="349d290f82d12ef820cb5f076ee30c3546821af1" upstream="develop"/>
-  <project name="rk-rootfs-build" path="rootfs" revision="8ef6e7a86e2a7f1eb3af18b5b47b59258a09b22b" upstream="master"/>
   <project name="rk_pcba_test" path="external/rk_pcba_test" revision="25643cf5f522a71ed2a918b0abe15e363a893504" upstream="master"/>
   <project name="rk_tee_user" path="external/security/rk_tee_user" revision="e1aa9109bdfa53ee0e331eea07ee8ad360d97706" upstream="master"/>
   <project name="rkbin" revision="18cd9b732e7c90cf1bb653a36d707ae629b3a791" upstream="stable-4.4-rk3399-linux"/>
