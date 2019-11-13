@@ -10,7 +10,7 @@
 
   <remote name="advantech-github" fetch="https://github.com/ADVANTECH-Rockchip/" />
 
-  <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v220_dmssa53"/>
+  <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v220_dmssa51"/>
   <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v220"/>
   <project remote="advantech-github" name="linux_rootfs-build" path="rootfs" revision="rk3399_linux_v220_dmssa53"/>
 
