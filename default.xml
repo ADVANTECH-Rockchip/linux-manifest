@@ -13,6 +13,13 @@
   <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v220_dmssa51"/>
   <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v220"/>
   <project remote="advantech-github" name="linux_rootfs-build" path="rootfs" revision="rk3399_linux_v220_dmssa53"/>
+  <project remote="advantech-github" name="linux_device" path="device/rockchip" revision="rk3399_linux_v220" upstream="master">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
+  </project>
+
 
   <!-- Rockchip linux code -->
   <project name="QLauncher" path="app/QLauncher" revision="dbd9b7562253c277e5010e1df0ed2dcc4fca4a21" upstream="master"/>
@@ -29,12 +36,14 @@
   <project name="camera_engine_cifisp" path="external/camera_engine_cifisp" revision="1ca397689e2803445326dcddea49fa6b0757a416" upstream="master"/>
   <project name="camera_engine_rkisp" path="external/camera_engine_rkisp" revision="fe8e1563c787d607b6bf4dea0d5f32a8662d9445" upstream="master"/>
   <project name="demo" path="app/demo" revision="9c70bb34443f8a8c7b5987baf4b47dbb29d0a0c2" upstream="master"/>
+  <!--
   <project name="device-custom" path="device/rockchip" revision="84375e231994eea6c79010397afa0581b8f0fa3c" upstream="master">
     <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
     <linkfile dest="build.sh" src="common/build.sh"/>
     <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
     <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
   </project>
+  -->
   <project name="distro" revision="85c31c4cb996e06f5f1d82c04d7744bc072f9a23" upstream="master"/>
   <project name="dl" path="buildroot/dl" revision="5e8b12996471998e471159693f91fa1e941b8261" upstream="master"/>
   <project name="docs" revision="b726a315462d288631b6d30877db09271538a4c4" upstream="master"/>
