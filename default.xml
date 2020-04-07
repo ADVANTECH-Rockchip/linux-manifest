@@ -20,7 +20,7 @@
   <project remote="advantech-github" name="linux_rkbin" path="rkbin" revision="rk3288_linux_v2.0_rb04"/>
   <project remote="advantech-github" name="linux_rootfs" path="rootfs" revision="rk3288_linux_v2.0_rb04"/>
   <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs_adv" revision="rk3288_linux_v2.0_rb04">
-    <linkfile dest="mk-debian.sh" src="rootfs_adv/mk-debian.sh"/>
+    <linkfile dest="mk-debian.sh" src="mk-debian.sh"/>
   </project>
   <project remote="advantech-github" name="linux_tools" path="tools" revision="rk3288_linux_v2.0_rb04"/>
 </manifest>
