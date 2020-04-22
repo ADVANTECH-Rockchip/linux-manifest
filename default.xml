@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remote  name="rockchip-linux"
+           fetch="https://github.com/rockchip-linux/"
+           review="https://github.com/rockchip-linux/" />
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
-  <remote fetch="." name="rockchip-linux" review="https://github.com/rockchip-linux/"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  
   <default remote="rockchip-linux" revision="master" sync-j="4"/>
-  
+  <remote name="advantech-github" fetch="https://github.com/ADVANTECH-Rockchip/" />
+
+  <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v231"/>
+  <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v231"/>
+
+  <!-- Rockchip linux code -->
   <project name="LocalPlayer" path="external/LocalPlayer" revision="e7d5cc72e5f0da13f2765aa02bd22d03ebc82750" upstream="master"/>
   <project name="QLauncher" path="app/QLauncher" revision="d131e2d41101d967bdd2c1bbb8d523073c4d3f02" upstream="develop"/>
   <project name="RKNPUTools" path="external/RKNPUTools" revision="18b71c788317de29a7bcdffbf06c4708f58055b9" upstream="rk33/mid/8.1/develop"/>
@@ -39,7 +45,6 @@
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu" revision="f96f76d6be89a6e28d4dac1f233f9aca9921f69b" upstream="master"/>
   <project name="gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="master"/>
   <project name="gstreamer-rockchip" path="external/gstreamer-rockchip" revision="9987a660d6f53553f9c74c042888eb417833c932" upstream="master"/>
-  <project name="kernel" revision="73795337dde7cbc27735ff2f7e9fb328963eb2bd" upstream="stable-4.4-rk3399-linux"/>
   <project name="libdrm-rockchip" path="external/libdrm" revision="696a303b72faf2dd9a0850aa31e678b29e3aec08" upstream="rk33/mid/9.0/develop"/>
   <project name="libmali" path="external/libmali" revision="67a812cfe7b47826a2a718ef09c87adef8e19874" upstream="master"/>
   <project name="linux-rga" path="external/linux-rga" revision="72e7764a9fe358e6ad50eb1b21176cc95802c7fb" upstream="master"/>
@@ -88,7 +93,6 @@
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
     <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
   </project>
-  <project name="u-boot" revision="d625acc28e2963c097074c49a25072346e686a1c" upstream="stable-4.4-rk3399-linux"/>
   <project name="update_engine" path="external/update_engine" revision="047d95d37b628563389eb397f19fe5f1c0c8eb05" upstream="master"/>
   <project name="uvc_app" path="external/uvc_app" revision="9435ffbff23c3885922cafa02c134025952e0ed6" upstream="master"/>
   <project name="wifiAutoSetup" path="external/wifiAutoSetup" revision="d2cfc6b2ca9754311542f91e481e8576fd4ecbc0" upstream="master"/>
