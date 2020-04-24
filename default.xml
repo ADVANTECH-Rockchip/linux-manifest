@@ -12,6 +12,7 @@
   <project remote="advantech-github" name="linux_external" path="external" revision="master"/>
   <project remote="advantech-github" name="linux_rkbin" path="rkbin" revision="master"/>
   <project remote="advantech-github" name="linux_rootfs" path="debian" revision="master"/>
-  <project remote="advantech-github" name="linux_rootfs_adv" path="distro" revision="master"/>
+  <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs_adv" revision="master"/>
+  <project remote="advantech-github" name="linux_distro" path="distro" revision="master"/>
   <project remote="advantech-github" name="linux_tools" path="tools" revision="master"/>
 </manifest>
