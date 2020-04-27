@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+   <remote name="advantech-github"
+           fetch="https://github.com/ADVANTECH-Rockchip/" />
+
+  <project remote="advantech-github" name="linux_app" path="app" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_buildroot" path="buildroot" revision="rk3399_linux_v231_risc">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project remote="advantech-github" name="linux_device" path="device" revision="rk3399_linux_v231_risc">
+    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="rk3399/BoardConfig.mk"/>
+  </project>
+  <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_prebuilts" path="prebuilts" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_external" path="external" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_rkbin" path="rkbin" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_rootfs" path="debian" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_distro" path="distro" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs_adv" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_tools" path="tools" revision="rk3399_linux_v231_risc">
+     <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+</manifest>
