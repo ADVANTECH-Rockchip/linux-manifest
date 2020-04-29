@@ -9,9 +9,9 @@
     <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
   </project>
   <project remote="advantech-github" name="linux_device" path="device" revision="rk3399_linux_v231_risc">
-    <linkfile dest="mkfirmware.sh" src="common/mkfirmware.sh"/>
-    <linkfile dest="build.sh" src="common/build.sh"/>
-    <linkfile dest="rkflash.sh" src="common/rkflash.sh"/>
+    <linkfile dest="mkfirmware.sh" src="rockchip/common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="rockchip/common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="rockchip/common/rkflash.sh"/>
   </project>
   <project remote="advantech-github" name="linux_kernel-rk" path="kernel" revision="rk3399_linux_v231_risc"/>
   <project remote="advantech-github" name="linux_u-boot-rk" path="u-boot" revision="rk3399_linux_v231_risc"/>
