@@ -20,7 +20,9 @@
   <project remote="advantech-github" name="linux_rkbin" path="rkbin" revision="rk3399_linux_v231_risc"/>
   <project remote="advantech-github" name="linux_rootfs" path="debian" revision="rk3399_linux_v231_risc"/>
   <project remote="advantech-github" name="linux_distro" path="distro" revision="rk3399_linux_v231_risc"/>
-  <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs_adv" revision="rk3399_linux_v231_risc"/>
+  <project remote="advantech-github" name="linux_rootfs_adv" path="rootfs_adv" revision="rk3399_linux_v231_risc">
+    <linkfile dest="mk-debian.sh" src="mk-debian.sh"/>
+  </project>
   <project remote="advantech-github" name="linux_tools" path="tools" revision="rk3399_linux_v231_risc">
      <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
     <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
