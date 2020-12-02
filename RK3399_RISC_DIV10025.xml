@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/ADVANTECH-Rockchip/" name="advantech-github"/>
+  
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_app" path="app" remote="advantech-github" revision="c466c204ab9cb99ea1585fecb162d751ad2743f8" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_buildroot" path="buildroot" remote="advantech-github" revision="96e4f1e8d47a2b72b98915ea159b498d4d7d5ef2" upstream="rk3399_linux_v231_risc">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_device" path="device" remote="advantech-github" revision="256ef41e40a66d0688bfbf49477c65b0432810ec" upstream="rk3399_linux_v231_risc">
+    <linkfile dest="mkfirmware.sh" src="rockchip/common/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="rockchip/common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="rockchip/common/rkflash.sh"/>
+  </project>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_distro" path="distro" remote="advantech-github" revision="4ad05645a51314966a787823d8b90551af6dbcf2" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_external" path="external" remote="advantech-github" revision="33fbaf685fc81056bc9fff4200037291bc833fa8" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_kernel-rk" path="kernel" remote="advantech-github" revision="13eb8ac587ce0f7f4a1950aec6b0dcd51e3e9e78" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_prebuilts" path="prebuilts" remote="advantech-github" revision="0daf69d0daf90fd1643f891919269f094af1eb31" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_rkbin" path="rkbin" remote="advantech-github" revision="d6bc0e868ea0b6f669c4191138b47ccd22ffd42d" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_rootfs" path="debian" remote="advantech-github" revision="b97ed7d553e1216b08d6e11d01db3fdaae8be155" upstream="rk3399_linux_v231_risc"/>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_rootfs_adv" path="rootfs_adv" remote="advantech-github" revision="ff6db76c64a6fb0d61d55afcf557733e79d3e959" upstream="rk3399_linux_v231_risc">
+    <linkfile dest="mk-debian.sh" src="mk-debian.sh"/>
+  </project>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_tools" path="tools" remote="advantech-github" revision="bd5e2f7d4c9a32d5d33eb0a3d817d4269959b0bc" upstream="rk3399_linux_v231_risc">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/rk3399-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/rk3399-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/rk3399-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/rk3399-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/rk3399-package-file"/>
+  </project>
+  <project dest-branch="rk3399_linux_v231_risc" name="linux_u-boot-rk" path="u-boot" remote="advantech-github" revision="f1978014902a8dacbbfe24a2953ee0759bc4dd72" upstream="rk3399_linux_v231_risc"/>
+</manifest>
